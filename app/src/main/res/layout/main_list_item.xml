@@ -1,0 +1,539 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/Rel"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="22dp">
+
+                <RelativeLayout
+                    android:id="@+id/re1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="5dp"
+
+
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/highicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/up" />
+
+                    <TextView
+                        android:id="@+id/minusprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/highicon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="래미안블레스티지"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/Area_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:id="@+id/Area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="196.21"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/pyeungsu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/Area"
+                            android:textSize="12dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pyeungdang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/pyeungsu"
+                            android:textSize="12dp"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/Bupjungdong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Area_layout"
+                        android:gravity="center"
+                        android:text="서울특별시 강남구 압구정동"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/re3"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="20억9000"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/highp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/price"
+                        android:layout_marginTop="1dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/Previ_pricenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="40억 2000"
+                            android:textSize="11dp" />
+
+                        <TextView
+                            android:id="@+id/b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:layout_toRightOf="@+id/Previ_pricenumber"
+                            android:text="("
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/high_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+
+                            android:layout_toRightOf="@+id/b"
+                            android:text="20.12.02"
+                            android:textSize="8dp" />
+
+                        <TextView
+                            android:id="@+id/b1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginLeft="4dp"
+
+                            android:layout_toRightOf="@+id/high_day"
+                            android:text=")"
+                            android:textSize="12dp" />
+
+
+                        <TextView
+                            android:id="@+id/high2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/b1"
+                            android:text=""
+                            android:textSize="9dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/highp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/gap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:layout_marginRight="3dp"
+                            android:text="8억 50000">
+
+
+
+
+                        </TextView>
+
+                        <TextView
+
+                            android:id="@+id/e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/gap"
+                            android:text="( "
+                            android:textSize="12dp" />
+                        <TextView
+                            android:id="@+id/rentprice"
+                            android:layout_toRightOf="@+id/e"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="8dp"
+                            android:text="14억 3000 / ">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rentvalue"
+                            android:layout_toRightOf="@+id/rentprice"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:textSize="8dp"
+                            android:text="2">
+
+                        </TextView>
+
+                        <TextView
+
+                            android:id="@+id/e1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rentvalue"
+                            android:text=" )"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Rel"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="계약일"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/ymd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="20.9.01"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="건축년도"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/CREATE_YYYY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="층"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/high"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="6"
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="세대수"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/chongsedaesu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text=" - "
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="주차대수"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/pyungeunjucha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g5"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text=" - "
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="지하철"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/jihachul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g6"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text=" - "
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="용적률(%)"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/yongjeukryul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g7"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text=" - "
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.2">
+
+                        <TextView
+                            android:id="@+id/g8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="건폐율(%)"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/gunpaeyul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/g8"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text=" - "
+                            android:textColor="@android:color/black"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="5dp"
+            android:text="단위 : 만원"
+            android:textSize="9dp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

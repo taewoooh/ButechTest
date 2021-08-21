@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ButechTest</string>
+    <string name="newdata_coment">입력하신 정보의 신규 실거래 검색 결과는 없습니다.</string>
+    <string name="chart_coment">입력하신 정보의 검색 결과는 없습니다.</string>
+</resources>
